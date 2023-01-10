@@ -1,0 +1,6 @@
+value = input('Enter a number: ')
+print(value)
+print('my favorit number is ' + value)
+print('when you multibly it by 10 it will be')
+valueInt = int(value)
+print(valueInt * 10)
