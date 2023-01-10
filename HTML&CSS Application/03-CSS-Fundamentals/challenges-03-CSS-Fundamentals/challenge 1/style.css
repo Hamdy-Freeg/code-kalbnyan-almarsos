@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+section {
+  border: 4px solid black;
+}
+h2 {
+  font-size: 26px;
+  text-align: center;
+  background-color: #f7f7f7;
+  text-transform: uppercase;
+}
+#price {
+  font-weight: bold;
+  font-size: 20px;
+}
+#free {
+  color: #777;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+button {
+  background-color: #000;
+  color: #fff;
+  padding: 3px;
+  font-size: 20px;
+}
+.list {
+  list-style: square;
+}

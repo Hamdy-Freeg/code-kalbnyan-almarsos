@@ -1,0 +1,33 @@
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+h1 {
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  font-style: italic;
+}
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: center;
+}
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  color: #444444;
+}
+li {
+  font-family: sans-serif;
+  color: bisque;
+}
