@@ -4,16 +4,16 @@ const CleanPlugin = require('clean-webpack-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    shop: './src/optimized/shop.js'
+    shop: './src/non-optimized/shop.js',
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist', 'assets', 'scripts'),
-    publicPath: 'assets/scripts/'
+    publicPath: 'assets/scripts/',
   },
   devtool: 'source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
   },
   module: {
     rules: [
@@ -26,13 +26,13 @@ module.exports = {
             presets: [
               [
                 '@babel/preset-env',
-                { useBuiltIns: 'usage', corejs: { version: 3 } }
-              ]
-            ]
-          }
-        }
-      }
-    ]
+                { useBuiltIns: 'usage', corejs: { version: 3 } },
+              ],
+            ],
+          },
+        },
+      },
+    ],
   },
-  plugins: [new CleanPlugin.CleanWebpackPlugin()]
+  plugins: [new CleanPlugin.CleanWebpackPlugin()],
 };
